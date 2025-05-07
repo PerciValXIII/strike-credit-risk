@@ -1,0 +1,70 @@
+data/
+ouputs/predictions/
+outputs/models/
+
+
+
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+
+# Pytest cache
+.pytest_cache/
+
+
+# profiling data
+*.prof
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*.orig
+*~
+
+# Jupyter Notebook Hidden Output
+**/.ipynb_checkpoints/*
+
+*.csv
+
+
