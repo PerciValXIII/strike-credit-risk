@@ -1,21 +1,46 @@
+
 # STRIKE Experiment: Polish Bankruptcy Dataset
 
-This module evaluates STRIKE on the **Polish companies bankruptcy dataset** from UCI ML Repository. It focuses on predicting company-level bankruptcy using 65 financial features and a highly imbalanced sample of 7,027 observations (3.86% bankrupt).
+This module evaluates **STRIKE**, a multi-model stacking framework, on the **Polish companies bankruptcy dataset** from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Polish+companies+bankruptcy+data). The task involves predicting company-level bankruptcy using 65 financial features from a highly imbalanced dataset of 7,027 observations (only 3.86% labeled as bankrupt).
 
 ---
 
-## Contents
+## Objectives
 
-- `polish_strike_v3.ipynb`: Core notebook for data prep, model training, evaluation.
-- `__init__.py`: Module declaration.
-
----
-
-## Goals
-
-- Demonstrate STRIKE's performance under small-sample, high-imbalance settings.
-- Compare STRIKE to baseline and orthodox stacking models.
+- Demonstrate STRIKE’s robustness in small-sample, high-class-imbalance settings.
+- Compare STRIKE against baseline models and orthodox stacking approaches.
+- Replicate the results for the Polish dataset as reported in Section 4.1 and 4.5 of the NeurIPS paper.
 
 ---
 
-Refer to the NeurIPS paper Section 4.1 and 4.5 for Polish dataset results.
+## Running the Experiment
+
+### Step 1: Train the Model
+
+This step reads the input data and writes all model artifacts to the `models/` directory.
+
+```bash
+cd strike-credit-risk/exp1_polish
+
+python train.py   --input-data polish_bankruptcy.csv   --output-dir models
+```
+
+### Step 2: Evaluate the Model
+
+This step loads the trained models and generates evaluation plots and metrics under the `evaluation_plots/` directory.
+
+```bash
+python eval.py   --model-dir models   --output-dir evaluation_plots
+```
+
+---
+
+## Notes
+
+- Ensure that `polish_bankruptcy.csv` is present in the working directory before running `train.py`.
+- All plots, evaluation metrics, and CSV summaries will be saved in `evaluation_plots/` after evaluation.
+- This experiment is designed to benchmark STRIKE's performance under real-world credit risk modeling conditions.
+
+---
+
+For more details, refer to Section 4.1 and 4.5 of the NeurIPS paper.
