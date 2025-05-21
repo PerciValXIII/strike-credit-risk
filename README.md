@@ -9,13 +9,13 @@ STRIKE is a modular stacking framework that enhances predictive performance by:
 - Aggregating their predictions using a **logistic regression meta-learner**.
 
 We provide scripts to reproduce results on three benchmark datasets:
-- 🏢 Polish Company Bankruptcy Dataset (UCI)
-- 💳 LendingClub Peer-to-Peer Loan Dataset (Kaggle)
-- 🏠 Home Credit Default Risk Dataset (Kaggle)
+- Polish Company Bankruptcy Dataset (UCI)
+- LendingClub Peer-to-Peer Loan Dataset (Kaggle)
+- Home Credit Default Risk Dataset (Kaggle)
 
 ---
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 ### Clone & Install Dependencies
 
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Reproducing Experiments
+## Reproducing Experiments
 
 Each experiment is located under `src/` in its own subdirectory:
 
@@ -67,7 +67,7 @@ Each script performs the following steps:
 
 ---
 
-## 📊 Evaluation Protocol
+## Evaluation Protocol
 
 - **Primary Metric**: AUC-ROC
 - Dataset Split: 70/30 train-test
@@ -77,7 +77,7 @@ Each script performs the following steps:
 
 ---
 
-## 📎 Reference Datasets
+## Reference Datasets
 
 - [Polish Bankruptcy Dataset (UCI)](https://archive.ics.uci.edu/dataset/365/polish+companies+bankruptcy+data)
 - [LendingClub Loan Data (Kaggle)](https://www.kaggle.com/datasets/wordsforthewise/lending-club)
@@ -85,7 +85,7 @@ Each script performs the following steps:
 
 ---
 
-## 📄 Citation
+## Citation
 
 If you use STRIKE in your work, please cite:
 
@@ -100,6 +100,6 @@ If you use STRIKE in your work, please cite:
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License.
