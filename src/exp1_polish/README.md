@@ -23,7 +23,7 @@ Before running any code, download the raw CSV file from the following Google Dri
 https://drive.google.com/drive/folders/1ef8jGMQSni6r4pSW2aMg6c453Y2a5tt6?usp=sharing
 ```
 
-Place the downloaded csv file - `polish_bankruptcy.csv` from `exp1_polish_data` directly inside the `exp1_polish/` directory. 
+Place the downloaded csv file - `polish_bankruptcy.csv` from `exp1_polish_data` directly inside the `exp1_polish/` directory in the source code. 
 
 ---
 

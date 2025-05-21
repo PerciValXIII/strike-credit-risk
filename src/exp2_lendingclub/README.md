@@ -23,7 +23,7 @@ Before running any code, download the raw CSV file from the following Google Dri
 https://drive.google.com/drive/folders/1ef8jGMQSni6r4pSW2aMg6c453Y2a5tt6?usp=sharing
 ```
 
-Place the downloaded csv file - `filtered_data_lendingclub.csv` from `exp2_lendingclub_data` directly inside the `exp2_lendingclub/` directory. 
+Place the downloaded csv file - `filtered_data_lendingclub.csv` from `exp2_lendingclub_data` directly inside the `exp2_lendingclub/` directory in the source code. 
 
 ---
 

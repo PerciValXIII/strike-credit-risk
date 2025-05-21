@@ -1,17 +1,23 @@
 # STRIKE: A Feature-Group-Aware Stacking Framework for Credit Default Prediction
 
-This repository contains the official implementation of the STRIKE framework proposed in the NeurIPS 2024 submission, **"STRIKE: Stacking via Targeted Representations of Isolated Knowledge Extractors"**. STRIKE is a modular stacking methodology that isolates semantically coherent feature groups, trains specialized base models per group, and combines their predictions through a meta-learner.
+This repository contains the official implementation of **STRIKE**, introduced in our NeurIPS 2024 submission:  
+**"STRIKE: Stacking via Targeted Representations of Isolated Knowledge Extractors."**
 
-We provide scripts and configuration to replicate all experimental results on the following datasets:
-- Polish Company Bankruptcy Dataset (UCI)
-- LendingClub Peer-to-Peer Loan Dataset (Kaggle)
-- Home Credit Default Risk Dataset (Kaggle)
+STRIKE is a modular stacking framework that enhances predictive performance by:
+- Isolating semantically coherent **feature groups**,
+- Training specialized **base models** on each group,
+- Aggregating their predictions using a **logistic regression meta-learner**.
+
+We provide scripts to reproduce results on three benchmark datasets:
+- 🏢 Polish Company Bankruptcy Dataset (UCI)
+- 💳 LendingClub Peer-to-Peer Loan Dataset (Kaggle)
+- 🏠 Home Credit Default Risk Dataset (Kaggle)
 
 ---
 
-## Setup Instructions
+## 🛠️ Setup Instructions
 
-### Clone and Install Dependencies
+### Clone & Install Dependencies
 
 ```bash
 git clone https://github.com/PerciValXIII/strike-credit-risk.git
@@ -23,56 +29,37 @@ pip install -r requirements.txt
 
 ---
 
-## Reproduce Experiments
+## 🚀 Reproducing Experiments
 
-Each dataset experiment is contained in its own directory under `src/`.
+Each experiment is located under `src/` in its own subdirectory:
 
-### Run STRIKE on Polish Dataset
+- `exp1_polish/`
+- `exp2_lendingclub/`
+- `exp3_homecredit/`
 
-```bash
-cd src/exp1_polish
-python run_polish_strike.py
-```
+### Running STRIKE
 
-### Run STRIKE on LendingClub Dataset
+Please refer to the `README.md` inside each experiment folder for exact commands.
 
-```bash
-cd src/exp2_lendingclub
-python run_lendingclub_strike.py
-```
-
-### Run STRIKE on HomeCredit Dataset
-
-```bash
-cd src/exp3_homecredit
-python run_homecredit_strike.py
-```
-
-Each script will:
-- Load the corresponding dataset from `data/`
-- Apply feature group isolation
-- Train baseline models with out-of-fold prediction
-- Construct the meta-dataset
-- Train the final logistic regression meta-learner
-- Output logs, trained models, and predictions to `outputs/`
+Each script performs the following steps:
+- Loads and preprocesses dataset 
+- Constructs isolated feature groups
+- Trains multiple base models with out-of-fold predictions
+- Builds a meta-dataset
+- Trains a logistic regression meta-model
 
 ---
 
-## 🔧 Directory Structure
+## 📁 Project Structure
 
 ```
-├── data/                    # Raw and processed datasets
+├── generic_notebooks/       # Jupyter notebooks for exploratory work
 ├── outputs/
-│   ├── logs/               # Training logs
-│   ├── models/             # Pickled base/meta models
-│   └── predictions/        # Final test set predictions
+│   ├── logs/                # Logs for training and evaluation
 ├── src/
 │   ├── exp1_polish/
 │   ├── exp2_lendingclub/
 │   ├── exp3_homecredit/
-│   ├── model_training/     # Model training utilities
-│   ├── feature_engineering/
-│   └── feature_selection/
 ├── requirements.txt
 ├── LICENSE
 └── README.md
@@ -80,19 +67,27 @@ Each script will:
 
 ---
 
-## 📊 Evaluation
+## 📊 Evaluation Protocol
 
-The primary evaluation metric is **AUC-ROC**. For all experiments:
-- A 70/30 train-test split is used
-- 5-fold cross-validation is applied within the training set
-- OOF predictions are used to construct the meta-dataset
-- All results are reproducible and stored under `outputs/`
+- **Primary Metric**: AUC-ROC
+- Dataset Split: 70/30 train-test
+- 5-Fold CV used for base models
+- Meta-model trained on OOF predictions
+- All experiments are reproducible from raw CSV to final predictions
 
 ---
 
-## 📃 Citing
+## 📎 Reference Datasets
 
-If you find STRIKE useful in your work, please cite:
+- [Polish Bankruptcy Dataset (UCI)](https://archive.ics.uci.edu/dataset/365/polish+companies+bankruptcy+data)
+- [LendingClub Loan Data (Kaggle)](https://www.kaggle.com/datasets/wordsforthewise/lending-club)
+- [Home Credit Default Risk (Kaggle)](https://www.kaggle.com/competitions/home-credit-default-risk)
+
+---
+
+## 📄 Citation
+
+If you use STRIKE in your work, please cite:
 
 ```bibtex
 @misc{maiti2024strike,
@@ -105,17 +100,6 @@ If you find STRIKE useful in your work, please cite:
 
 ---
 
-## 📎 Reference Datasets
-
-- [Polish Bankruptcy Data (UCI)](https://archive.ics.uci.edu/dataset/365/polish+companies+bankruptcy+data)
-- [LendingClub Loan Data (Kaggle)](https://www.kaggle.com/datasets/wordsforthewise/lending-club)
-- [Home Credit Default Risk (Kaggle)](https://www.kaggle.com/competitions/home-credit-default-risk)
-
----
-
-## 🔒 License
+## 📜 License
 
 This project is licensed under the MIT License.
-
----
-```
