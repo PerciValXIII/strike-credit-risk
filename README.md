@@ -91,7 +91,7 @@ If you use STRIKE in your work, please cite:
 
 ```bibtex
 @misc{maiti2024strike,
-  author       = {Swattik Maiti},
+  author       = {Swattik Maiti, Ritik Pratap Singh, Dr. Fardina Alam},
   title        = {STRIKE: Stacking via Targeted Representations of Isolated Knowledge Extractors},
   year         = {2025},
   url          = {https://github.com/PerciValXIII/strike-credit-risk},
