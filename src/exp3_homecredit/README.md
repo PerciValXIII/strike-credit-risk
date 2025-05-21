@@ -20,10 +20,10 @@ This module applies **STRIKE**, a multi-model stacking framework, to the **Home 
 Before running any code, download the raw CSV files from the following Google Drive link:
 
 ```
-<placeholder>
+https://drive.google.com/drive/folders/1ef8jGMQSni6r4pSW2aMg6c453Y2a5tt6?usp=sharing
 ```
 
-Then, **create a `data/` folder inside `exp3_homecredit/`** or use the already empty data folder and place all the downloaded raw files there.
+Then, **create a `data/` folder inside `exp3_homecredit/` directory** and place all the downloaded raw files from `exp3_homecredit_data` inside the data folder. 
 
 ---
 

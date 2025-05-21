@@ -15,6 +15,18 @@ This module evaluates **STRIKE**, a multi-model stacking framework, on the **Pol
 
 ## Running the Experiment
 
+### Step 0: Prepare Raw Data
+
+Before running any code, download the raw CSV file from the following Google Drive link:
+
+```
+https://drive.google.com/drive/folders/1ef8jGMQSni6r4pSW2aMg6c453Y2a5tt6?usp=sharing
+```
+
+Place the downloaded csv file - `polish_bankruptcy.csv` from `exp1_polish_data` directly inside the `exp1_polish/` directory. 
+
+---
+
 ### Step 1: Train the Model
 
 This step reads the input data and writes all model artifacts to the `models/` directory.

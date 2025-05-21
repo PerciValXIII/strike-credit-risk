@@ -15,6 +15,18 @@ This module applies **STRIKE**, a multi-model stacking framework, to the **Lendi
 
 ## Running the Experiment
 
+### Step 0: Prepare Raw Data
+
+Before running any code, download the raw CSV file from the following Google Drive link:
+
+```
+https://drive.google.com/drive/folders/1ef8jGMQSni6r4pSW2aMg6c453Y2a5tt6?usp=sharing
+```
+
+Place the downloaded csv file - `filtered_data_lendingclub.csv` from `exp2_lendingclub_data` directly inside the `exp2_lendingclub/` directory. 
+
+---
+
 ### Step 1: Preprocess & Train the Model
 
 This step processes the raw CSV data and writes trained model artifacts to the `models/` directory.
