@@ -104,18 +104,18 @@ class BureauFeatureEngineer:
 
 
 if __name__ == "__main__":
-    root_dir = Path(__file__).resolve().parents[2]
+    root_dir = Path(__file__).resolve().parents[1]
     
     engineer = BureauFeatureEngineer(
-        application_path=os.path.join(root_dir, "data", "raw", "application_train.csv"),
-        bureau_path=os.path.join(root_dir, "data", "raw", "bureau.csv"),
-        bureau_balance_path=os.path.join(root_dir, "data", "raw", "bureau_balance.csv")
+        application_path=os.path.join(root_dir, "data", "application_train.csv"),
+        bureau_path=os.path.join(root_dir, "data", "bureau.csv"),
+        bureau_balance_path=os.path.join(root_dir, "data", "bureau_balance.csv")
     )
     engineer.load_data()
     engineer.engineer_features()
     features_df = engineer.get_features()
 
-    # save in data>processed
-    output_path = os.path.join(root_dir, "data", "processed", "deq_features_level1.csv")
+    # save in data
+    output_path = os.path.join(root_dir, "data", "deq_features_level1.csv")
     features_df.to_csv(output_path, index=False)
 

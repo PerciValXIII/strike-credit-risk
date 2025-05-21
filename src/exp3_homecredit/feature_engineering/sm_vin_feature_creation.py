@@ -312,11 +312,11 @@ def create_vintage_features(app_train: pd.DataFrame, prev_app: pd.DataFrame, bur
     return final_vintage_features_df
 
 if __name__ == "__main__":
-    root_dir = Path(__file__).resolve().parents[2]
+    root_dir = Path(__file__).resolve().parents[1]
 
-    application_path = os.path.join(root_dir, "data", "raw", "application_train.csv")
-    bureau_path = os.path.join(root_dir, "data", "raw", "bureau.csv")
-    prev_application_path = os.path.join(root_dir, "data", "raw", "previous_application.csv")
+    application_path = os.path.join(root_dir, "data", "application_train.csv")
+    bureau_path = os.path.join(root_dir, "data", "bureau.csv")
+    prev_application_path = os.path.join(root_dir, "data", "previous_application.csv")
 
 
     app_train = pd.read_csv(application_path)
@@ -326,5 +326,5 @@ if __name__ == "__main__":
     final_vintage_features_df = create_vintage_features(app_train,prev_app,bureau)
 
     # save in data>processed
-    output_path = os.path.join(root_dir, "data", "processed", "vintage_features_1.csv")
+    output_path = os.path.join(root_dir, "data", "vintage_features_1.csv")
     final_vintage_features_df.to_csv(output_path, index=False)

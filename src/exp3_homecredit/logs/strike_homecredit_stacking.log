@@ -1,0 +1,29 @@
+2025-05-20 21:32:21,125 | INFO | 🚀 Starting STRIKE Home Credit Model Stacking Pipeline
+2025-05-20 21:32:21,125 | INFO | 🔄 Starting: Preprocessing DEMOG Features
+2025-05-20 21:32:40,251 | INFO | ✅ Completed: Preprocessing DEMOG Features in 19.13 seconds
+2025-05-20 21:32:40,251 | INFO | 🔄 Starting: Preprocessing DEQ Features
+2025-05-20 21:33:25,196 | INFO | ✅ Completed: Preprocessing DEQ Features in 44.94 seconds
+2025-05-20 21:33:25,197 | INFO | 🔄 Starting: Preprocessing Vintage Features
+2025-05-20 21:33:29,966 | INFO | ✅ Completed: Preprocessing Vintage Features in 4.77 seconds
+2025-05-20 21:33:29,966 | INFO | 🔄 Starting: Training Base Models on Demographic Features
+2025-05-20 21:33:32,707 | INFO |    AUC for fold 1: 0.7439
+2025-05-20 21:33:34,633 | INFO |    AUC for fold 2: 0.7524
+2025-05-20 21:33:36,548 | INFO |    AUC for fold 3: 0.7477
+2025-05-20 21:33:38,516 | INFO |    AUC for fold 4: 0.7504
+2025-05-20 21:33:40,447 | INFO |    AUC for fold 5: 0.7459
+2025-05-20 21:33:40,498 | INFO | [demog] xgb FINAL OOF AUC: 0.7481
+2025-05-20 21:33:42,120 | INFO |    AUC for fold 1: 0.7521
+2025-05-20 21:33:43,826 | INFO |    AUC for fold 2: 0.7614
+2025-05-20 21:33:45,507 | INFO |    AUC for fold 3: 0.7547
+2025-05-20 21:33:47,139 | INFO |    AUC for fold 4: 0.7608
+2025-05-20 21:33:48,737 | INFO |    AUC for fold 5: 0.7526
+2025-05-20 21:33:48,787 | INFO | [demog] lgb FINAL OOF AUC: 0.7563
+2025-05-20 21:33:57,833 | INFO |    AUC for fold 1: 0.6674
+2025-05-20 21:34:07,817 | INFO |    AUC for fold 2: 0.6777
+2025-05-20 21:34:18,665 | INFO |    AUC for fold 3: 0.6777
+2025-05-20 21:34:28,501 | INFO |    AUC for fold 4: 0.6838
+2025-05-20 21:34:38,036 | INFO |    AUC for fold 5: 0.6749
+2025-05-20 21:34:38,092 | INFO | [demog] logreg FINAL OOF AUC: 0.6763
+2025-05-20 21:35:35,134 | INFO |    AUC for fold 1: 0.7042
+2025-05-20 21:36:33,318 | INFO |    AUC for fold 2: 0.7097
+2025-05-20 21:37:30,671 | INFO |    AUC for fold 3: 0.6996
