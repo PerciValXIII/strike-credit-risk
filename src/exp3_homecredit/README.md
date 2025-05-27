@@ -54,7 +54,7 @@ python src/exp3_homecredit/model_training/model_stacking_run.py
 This will:
 
 - Preprocess the engineered datasets
-- Train base models on AMTF, DEQ, and Vintage features
+- Train base models on demog, DEQ, and Vintage features
 - Train a meta-model on stacked predictions
 - Save logs to `logs/strike_homecredit_stacking.log`
 
