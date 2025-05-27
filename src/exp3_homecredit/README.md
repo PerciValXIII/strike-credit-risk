@@ -29,7 +29,7 @@ Then, **create a `data/` folder inside `exp3_homecredit/` directory** and place 
 
 ### Step 1: Feature Engineering
 
-Run the following three scripts to generate intermediate features:
+Run the following two scripts to generate intermediate features:
 
 ```bash
 python src/exp3_homecredit/feature_engineering/sm_deq_feature_creation.py
