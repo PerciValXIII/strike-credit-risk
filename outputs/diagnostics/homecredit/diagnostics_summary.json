@@ -1,0 +1,18 @@
+{
+  "auc_holdout": 0.7710690405144136,
+  "cmi_stats": {
+    "mean_offdiag": 0.02187636209594802,
+    "median_offdiag": 0.014837130997514644,
+    "max_offdiag": 0.046996143954730236
+  },
+  "hstat_stats": {
+    "mean_offdiag": 0.43867309391498566,
+    "median_offdiag": 0.3198298215866089,
+    "max_offdiag": 0.7982954382896423
+  },
+  "groups": {
+    "demographics": 228,
+    "delinquency": 320,
+    "vintage": 46
+  }
+}
