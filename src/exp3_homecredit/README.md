@@ -1,71 +1,192 @@
-
 # STRIKE Experiment: Home Credit Default Risk
 
-This module applies **STRIKE**, a multi-model stacking framework, to the **Home Credit Default Risk** dataset from Kaggle. The dataset contains over 300,000 loan applications and hundreds of engineered features designed for binary classification of consumer loan default. The default rate is approximately 8%.
+This module applies **STRIKE**, a feature-group-aware stacking framework, to the **Home Credit Default Risk** dataset. The Home Credit dataset is a large-scale real-world credit scoring benchmark with hundreds of engineered predictors and a highly imbalanced binary default target.
+
+This folder contains the full Home Credit experiment pipeline, including:
+
+- feature engineering
+- model training and stacking
+- ablation studies
+- diagnostics used to analyze group structure
 
 ---
 
 ## Objectives
 
-- Validate STRIKE's performance on a high-dimensional, sparse, and noisy real-world credit scoring dataset.
-- Test the pipeline's robustness under class imbalance and many redundant features.
-- Reproduce model-specific metrics discussed in Section 4.5 of the NeurIPS paper.
+The Home Credit experiment is used to:
+
+- evaluate STRIKE on a high-dimensional real-world default prediction problem
+- study whether semantically defined feature groups improve stacking performance
+- reproduce the main Home Credit results reported in the paper
+- support ablation and diagnostic analysis for the grouping assumptions used by STRIKE
 
 ---
 
-## Running the Experiment
+## Folder Structure
 
-### Step 0: Prepare Raw Data
+### `feature_engineering/`
+Contains scripts used to create engineered feature tables from the raw Home Credit data.
 
-Before running any code, download the raw CSV files from the following Google Drive link:
+### `model_training/`
+Contains the main STRIKE training pipeline, including base-model training, out-of-fold prediction generation, and meta-model fitting.
 
-```
-https://drive.google.com/drive/folders/1ef8jGMQSni6r4pSW2aMg6c453Y2a5tt6?usp=sharing
-```
+### `ablation_studies/`
+Contains scripts for the Home Credit ablation experiments, including:
+- no-grouping baseline
+- grouping-based ablations
+- auxiliary grouping logic and logging helpers
 
-Then, **create a `data/` folder inside `exp3_homecredit/` directory** and place all the downloaded raw files from `exp3_homecredit_data` inside the data folder. 
+See `ablation_studies/README.md` for details.
+
+### `run_diagnostics.py`
+Runs the Home Credit diagnostics pipeline used to study cross-group dependence structure.
+
+Currently, this script computes:
+
+- **Conditional Mutual Information (CMI)** between feature groups conditioned on the target
+
+The outputs are saved under:
+
+```bash
+outputs/diagnostics/homecredit/
+````
+
+### `logs/`
+
+Stores experiment logs for the main STRIKE Home Credit pipeline.
+
+### `data/`
+
+Stores raw and intermediate Home Credit data files required by the experiment.
 
 ---
 
-### Step 1: Feature Engineering
+## Data Preparation
 
-Run the following two scripts to generate intermediate features:
+Before running the pipeline, download the required raw CSV files from the shared data source and place them inside:
+
+```bash
+src/exp3_homecredit/data/
+```
+
+At minimum, the Home Credit workflow expects the raw application and source tables required for feature engineering. Intermediate engineered CSVs will also be written into this same folder.
+
+Important files used in the main pipeline include:
+
+* `application_train.csv`
+* `deq_features_level1.csv`
+* `vintage_features_1.csv`
+
+---
+
+## Running the Home Credit Experiment
+
+### Step 1: Feature engineering
+
+Generate the engineered feature tables:
 
 ```bash
 python src/exp3_homecredit/feature_engineering/sm_deq_feature_creation.py
 python src/exp3_homecredit/feature_engineering/sm_vin_feature_creation.py
 ```
 
-These will produce:
-
-- `data/deq_features_level1.csv`
-- `data/vintage_features_1.csv`
+This produces the engineered group-specific feature files used by STRIKE.
 
 ---
 
-### Step 2: Train Base & Meta Models
+### Step 2: Run the main STRIKE pipeline
 
-Run the main stacking pipeline to preprocess features and train all models:
+Train the base models and stacking meta-model:
 
 ```bash
 python src/exp3_homecredit/model_training/model_stacking_run.py
 ```
 
-This will:
+This pipeline:
 
-- Preprocess the engineered datasets
-- Train base models on demog, DEQ, and Vintage features
-- Train a meta-model on stacked predictions
-- Save logs to `logs/strike_homecredit_stacking.log`
+* preprocesses the engineered datasets
+* trains base learners within each feature group
+* generates out-of-fold predictions
+* trains the final stacking meta-model
+* logs execution details to the Home Credit logs folder
+
+---
+
+### Step 3: Run diagnostics
+
+To compute the Home Credit grouping diagnostics:
+
+```bash
+python src/exp3_homecredit/run_diagnostics.py
+```
+
+This currently generates:
+
+* `cmi_matrix.csv`
+* `cmi_heatmap.png`
+* `diagnostics_summary.json`
+
+under:
+
+```bash
+outputs/diagnostics/homecredit/
+```
+
+These diagnostics are intended to help analyze whether the manually defined feature groups are approximately conditionally independent given the target.
+
+---
+
+### Step 4: Run ablation studies
+
+For ablation experiments, use the scripts under:
+
+```bash
+src/exp3_homecredit/ablation_studies/
+```
+
+Please refer to:
+
+```bash
+src/exp3_homecredit/ablation_studies/README.md
+```
+
+for exact instructions and environment-variable usage.
 
 ---
 
 ## Notes
 
-- Ensure all raw CSVs (e.g., `application_train.csv`, `bureau.csv`, etc.) are inside the `data/` directory.
-- All intermediate and processed feature files will also be saved to the same `data/` folder.
-- Logs are saved to the `logs/` folder inside `exp3_homecredit`.
+* Ensure all required CSV files are placed in `src/exp3_homecredit/data/`
+* Logs for the main Home Credit STRIKE run are saved under `src/exp3_homecredit/logs/`
+* Diagnostic outputs are saved under `outputs/diagnostics/homecredit/`
+* Ablation-specific logs are saved inside `src/exp3_homecredit/ablation_studies/logs/`
 
 ---
 
-For performance metrics and AUC results, refer to Table 2 in the NeurIPS paper.
+## Reproducibility
+
+The Home Credit module is intended to provide a reproducible implementation of the STRIKE experiment used in the paper, including:
+
+* engineered feature generation
+* grouped stacking pipeline
+* no-grouping and alternative-grouping ablations
+* CMI-based group diagnostics
+
+For exact ablation instructions, consult the ablation README in the corresponding subfolder.
+
+```
+
+---
+
+## My final recommendation
+
+Before changing the README, make these actual code edits in `run_diagnostics.py`:
+
+- remove `hstat` import
+- remove XGBoost/train-test/AUC block
+- keep only CMI outputs
+
+That will make the README fully truthful and much cleaner.
+
+If you want, I can next give you a **ready-to-paste final cleaned version of `run_diagnostics.py`** with all H-stat code removed so you can just replace the file directly.
+```
