@@ -74,26 +74,24 @@ def _save_heatmap(df: pd.DataFrame, title: str, path_png: Path) -> None:
     plt.figure(figsize=(6.5, 5.5), dpi=300)
 
     # Use a perceptually uniform colormap (e.g., "viridis" or "crest")
-    cmap = sns.color_palette("crest", as_cmap=True)
+    cmap = sns.color_palette("viridis", as_cmap=True)
 
     # Draw the heatmap using seaborn
     ax = sns.heatmap(
         df,
         annot=True,                     # show values in cells
-        fmt=".2f",                      # 2 decimal places
-        cmap=cmap,
+        fmt=".3f",                      # 2 decimal places
+        cmap = sns.color_palette("mako", as_cmap=True),
         cbar=True,
         linewidths=0.6,
         linecolor="white",
         square=True,
-        annot_kws={
-            "fontsize": 10,             # readable text
-            "color": "black",           # high contrast on light cells
-            "fontweight": "medium",
-        },
+        annot_kws={"fontsize": 10, "color": "white"},
         xticklabels=df.columns,
         yticklabels=df.index,
     )
+
+    
 
     # Formatting titles and ticks
     ax.set_title(title, fontsize=13, pad=16, fontweight="semibold")

@@ -117,5 +117,3 @@
 2025-04-20 12:04:17,453 | INFO | 🔄 Starting: Meta Model Training
 2025-04-20 12:04:17,995 | INFO | [META] Logistic Regression AUC (CV): 0.7661
 2025-04-20 12:04:18,101 | INFO | ✅ Completed: Meta Model Training in 0.65 seconds
-
-2025-04-20 12:04:18,101 | INFO | 🎯 Model stacking pipeline completed successfully.
