@@ -1,0 +1,23 @@
+2025-12-13 18:51:31 | INFO | evaluate_holdout | 🚀 Starting holdout evaluation
+2025-12-13 18:51:32 | INFO | evaluate_holdout | Loaded processed_test.csv: (45123, 142)
+2025-12-13 18:51:32 | INFO | evaluate_holdout | Loaded top_models: {'Loan_Terms': [('LightGBM', np.float64(0.7030469965676726)), ('XGBoost', np.float64(0.7005808176164438)), ('GBDT', np.float64(0.6967468037780831))], 'Credit_Profile': [('XGBoost', np.float64(0.6302144291129894)), ('GBDT', np.float64(0.6293836648968381)), ('LightGBM', np.float64(0.629246424855672))], 'Utilization_and_Activity': [('LightGBM', np.float64(0.6533225796613814)), ('XGBoost', np.float64(0.6531859191977593)), ('GBDT', np.float64(0.650920980087608))], 'Categorical_Flags': [('XGBoost', np.float64(0.7256243830843225)), ('GBDT', np.float64(0.725375723154092)), ('LightGBM', np.float64(0.7250966753483901))]}
+2025-12-13 18:51:35 | INFO | evaluate_holdout | Stacked test shape: (45123, 12)
+2025-12-13 18:51:35 | INFO | evaluate_holdout | 🎯 Holdout ROC AUC: 0.7535
+2025-12-13 18:51:35 | INFO | evaluate_holdout | 🎯 Holdout PR AUC:  0.9127
+2025-12-13 18:51:35 | INFO | evaluate_holdout | Optimal threshold (Youden J): 0.8124
+2025-12-13 18:51:35 | INFO | evaluate_holdout | Confusion matrix:
+[[ 6948  2655]
+ [12923 22597]]
+2025-12-13 18:51:35 | INFO | evaluate_holdout | Classification report:
+              precision    recall  f1-score   support
+
+           0       0.35      0.72      0.47      9603
+           1       0.89      0.64      0.74     35520
+
+    accuracy                           0.65     45123
+   macro avg       0.62      0.68      0.61     45123
+weighted avg       0.78      0.65      0.69     45123
+
+2025-12-13 18:51:36 | INFO | evaluate_holdout | Saved evaluation plot to /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/evaluation_plots/evaluation_holdout.png
+2025-12-13 18:51:36 | INFO | evaluate_holdout | Saved final predictions to /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/evaluation_plots/final_predictions_holdout.csv
+2025-12-13 18:51:36 | INFO | evaluate_holdout | ✅ Holdout evaluation completed successfully.

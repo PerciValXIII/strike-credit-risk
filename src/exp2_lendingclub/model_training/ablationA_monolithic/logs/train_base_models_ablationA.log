@@ -1,0 +1,42 @@
+2025-12-13 19:37:00 | INFO | ablationA_train | 🚀 Ablation A: Starting monolithic base model training
+2025-12-13 19:37:01 | INFO | ablationA_train | Loaded Monolithic_All_train.csv: (180488, 104)
+2025-12-13 19:37:01 | INFO | ablationA_train | Feature matrix: (180488, 102), Target: (180488,)
+2025-12-13 19:37:01 | INFO | ablationA_train | [Monolithic_All] ▶ Training model: XGBoost
+2025-12-13 19:37:02 | INFO | ablationA_train | [XGBoost] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_XGBoost_fold1.pkl
+2025-12-13 19:37:03 | INFO | ablationA_train | [XGBoost] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_XGBoost_fold2.pkl
+2025-12-13 19:37:04 | INFO | ablationA_train | [XGBoost] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_XGBoost_fold3.pkl
+2025-12-13 19:37:04 | INFO | ablationA_train | [XGBoost] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_XGBoost_fold4.pkl
+2025-12-13 19:37:05 | INFO | ablationA_train | [XGBoost] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_XGBoost_fold5.pkl
+2025-12-13 19:37:05 | INFO | ablationA_train | [Monolithic_All] [XGBoost] FINAL OOF AUC = 0.7542
+2025-12-13 19:37:05 | INFO | ablationA_train | [Monolithic_All] ▶ Training model: GBDT
+2025-12-13 19:39:32 | INFO | ablationA_train | [GBDT] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_GBDT_fold1.pkl
+2025-12-13 19:42:00 | INFO | ablationA_train | [GBDT] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_GBDT_fold2.pkl
+2025-12-13 19:44:26 | INFO | ablationA_train | [GBDT] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_GBDT_fold3.pkl
+2025-12-13 19:46:51 | INFO | ablationA_train | [GBDT] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_GBDT_fold4.pkl
+2025-12-13 19:49:18 | INFO | ablationA_train | [GBDT] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_GBDT_fold5.pkl
+2025-12-13 19:49:18 | INFO | ablationA_train | [Monolithic_All] [GBDT] FINAL OOF AUC = 0.7546
+2025-12-13 19:49:18 | INFO | ablationA_train | [Monolithic_All] ▶ Training model: AdaBoost
+2025-12-13 19:50:09 | INFO | ablationA_train | [AdaBoost] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_AdaBoost_fold1.pkl
+2025-12-13 19:51:00 | INFO | ablationA_train | [AdaBoost] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_AdaBoost_fold2.pkl
+2025-12-13 19:51:52 | INFO | ablationA_train | [AdaBoost] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_AdaBoost_fold3.pkl
+2025-12-13 19:52:43 | INFO | ablationA_train | [AdaBoost] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_AdaBoost_fold4.pkl
+2025-12-13 19:53:35 | INFO | ablationA_train | [AdaBoost] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_AdaBoost_fold5.pkl
+2025-12-13 19:53:35 | INFO | ablationA_train | [Monolithic_All] [AdaBoost] FINAL OOF AUC = 0.6984
+2025-12-13 19:53:35 | INFO | ablationA_train | [Monolithic_All] ▶ Training model: RandomForest
+2025-12-13 19:53:50 | INFO | ablationA_train | [RandomForest] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_RandomForest_fold1.pkl
+2025-12-13 19:54:05 | INFO | ablationA_train | [RandomForest] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_RandomForest_fold2.pkl
+2025-12-13 19:54:19 | INFO | ablationA_train | [RandomForest] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_RandomForest_fold3.pkl
+2025-12-13 19:54:33 | INFO | ablationA_train | [RandomForest] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_RandomForest_fold4.pkl
+2025-12-13 19:54:48 | INFO | ablationA_train | [RandomForest] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_RandomForest_fold5.pkl
+2025-12-13 19:54:48 | INFO | ablationA_train | [Monolithic_All] [RandomForest] FINAL OOF AUC = 0.7474
+2025-12-13 19:54:48 | INFO | ablationA_train | [Monolithic_All] ▶ Training model: LightGBM
+2025-12-13 19:54:49 | INFO | ablationA_train | [LightGBM] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_LightGBM_fold1.pkl
+2025-12-13 19:54:50 | INFO | ablationA_train | [LightGBM] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_LightGBM_fold2.pkl
+2025-12-13 19:54:52 | INFO | ablationA_train | [LightGBM] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_LightGBM_fold3.pkl
+2025-12-13 19:54:53 | INFO | ablationA_train | [LightGBM] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_LightGBM_fold4.pkl
+2025-12-13 19:54:54 | INFO | ablationA_train | [LightGBM] Saved model: /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/MonolithicAll_LightGBM_fold5.pkl
+2025-12-13 19:54:54 | INFO | ablationA_train | [Monolithic_All] [LightGBM] FINAL OOF AUC = 0.7576
+2025-12-13 19:54:55 | INFO | ablationA_train | Saved OOF predictions → /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/oof/oof_predictions_all_models.csv
+2025-12-13 19:54:55 | INFO | ablationA_train | 🏆 Top-3 models (monolithic): [('LightGBM', np.float64(0.7576072625535045)), ('GBDT', np.float64(0.7545543947352127)), ('XGBoost', np.float64(0.7542013588078432))]
+2025-12-13 19:54:55 | INFO | ablationA_train | Saved meta_train_top_models.csv → (180488, 4)
+2025-12-13 19:54:55 | INFO | ablationA_train | ✅ Ablation A base model training completed successfully.

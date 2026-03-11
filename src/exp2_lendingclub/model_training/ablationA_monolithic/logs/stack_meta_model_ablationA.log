@@ -1,0 +1,5 @@
+2025-12-13 19:56:15 | INFO | ablationA_meta | 🚀 Ablation A: Starting meta-model training
+2025-12-13 19:56:15 | INFO | ablationA_meta | Meta-train shape: (180488, 4)
+2025-12-13 19:56:29 | INFO | ablationA_meta | Meta-model CV AUC: mean=0.7575, std=0.0027
+2025-12-13 19:56:32 | INFO | ablationA_meta | Meta-model train AUC on OOF stack: 0.7575
+2025-12-13 19:56:32 | INFO | ablationA_meta | ✅ Saved meta-model to /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/ablationA_monolithic/models/stacking_meta_model.pkl

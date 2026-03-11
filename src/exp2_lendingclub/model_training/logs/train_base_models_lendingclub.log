@@ -1,0 +1,162 @@
+2025-12-13 18:28:31 | INFO | train_base_models | 🚀 Starting STRIKE base model training for LendingClub
+2025-12-13 18:28:32 | INFO | train_base_models | Loaded processed_train.csv: (180488, 142)
+2025-12-13 18:28:32 | INFO | train_base_models | 
+==================== Group: Loan_Terms ====================
+2025-12-13 18:28:32 | INFO | train_base_models | [Loan_Terms] X shape: (180488, 8), y shape: (180488,)
+2025-12-13 18:28:32 | INFO | train_base_models | [Loan_Terms] ▶ Training model: XGBoost
+2025-12-13 18:28:32 | INFO | train_base_models | [Loan_Terms] [XGBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_XGBoost_fold1.pkl
+2025-12-13 18:28:33 | INFO | train_base_models | [Loan_Terms] [XGBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_XGBoost_fold2.pkl
+2025-12-13 18:28:33 | INFO | train_base_models | [Loan_Terms] [XGBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_XGBoost_fold3.pkl
+2025-12-13 18:28:33 | INFO | train_base_models | [Loan_Terms] [XGBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_XGBoost_fold4.pkl
+2025-12-13 18:28:34 | INFO | train_base_models | [Loan_Terms] [XGBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_XGBoost_fold5.pkl
+2025-12-13 18:28:34 | INFO | train_base_models | [Loan_Terms] [XGBoost] FINAL OOF AUC = 0.7006
+2025-12-13 18:28:34 | INFO | train_base_models | [Loan_Terms] ▶ Training model: GBDT
+2025-12-13 18:28:53 | INFO | train_base_models | [Loan_Terms] [GBDT] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_GBDT_fold1.pkl
+2025-12-13 18:29:14 | INFO | train_base_models | [Loan_Terms] [GBDT] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_GBDT_fold2.pkl
+2025-12-13 18:29:36 | INFO | train_base_models | [Loan_Terms] [GBDT] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_GBDT_fold3.pkl
+2025-12-13 18:29:57 | INFO | train_base_models | [Loan_Terms] [GBDT] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_GBDT_fold4.pkl
+2025-12-13 18:30:18 | INFO | train_base_models | [Loan_Terms] [GBDT] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_GBDT_fold5.pkl
+2025-12-13 18:30:18 | INFO | train_base_models | [Loan_Terms] [GBDT] FINAL OOF AUC = 0.6967
+2025-12-13 18:30:18 | INFO | train_base_models | [Loan_Terms] ▶ Training model: AdaBoost
+2025-12-13 18:30:28 | INFO | train_base_models | [Loan_Terms] [AdaBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_AdaBoost_fold1.pkl
+2025-12-13 18:30:38 | INFO | train_base_models | [Loan_Terms] [AdaBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_AdaBoost_fold2.pkl
+2025-12-13 18:30:48 | INFO | train_base_models | [Loan_Terms] [AdaBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_AdaBoost_fold3.pkl
+2025-12-13 18:30:58 | INFO | train_base_models | [Loan_Terms] [AdaBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_AdaBoost_fold4.pkl
+2025-12-13 18:31:08 | INFO | train_base_models | [Loan_Terms] [AdaBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_AdaBoost_fold5.pkl
+2025-12-13 18:31:08 | INFO | train_base_models | [Loan_Terms] [AdaBoost] FINAL OOF AUC = 0.6764
+2025-12-13 18:31:08 | INFO | train_base_models | [Loan_Terms] ▶ Training model: RandomForest
+2025-12-13 18:31:11 | INFO | train_base_models | [Loan_Terms] [RandomForest] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_RandomForest_fold1.pkl
+2025-12-13 18:31:13 | INFO | train_base_models | [Loan_Terms] [RandomForest] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_RandomForest_fold2.pkl
+2025-12-13 18:31:15 | INFO | train_base_models | [Loan_Terms] [RandomForest] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_RandomForest_fold3.pkl
+2025-12-13 18:31:17 | INFO | train_base_models | [Loan_Terms] [RandomForest] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_RandomForest_fold4.pkl
+2025-12-13 18:31:19 | INFO | train_base_models | [Loan_Terms] [RandomForest] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_RandomForest_fold5.pkl
+2025-12-13 18:31:19 | INFO | train_base_models | [Loan_Terms] [RandomForest] FINAL OOF AUC = 0.6936
+2025-12-13 18:31:19 | INFO | train_base_models | [Loan_Terms] ▶ Training model: LightGBM
+2025-12-13 18:31:20 | INFO | train_base_models | [Loan_Terms] [LightGBM] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_LightGBM_fold1.pkl
+2025-12-13 18:31:20 | INFO | train_base_models | [Loan_Terms] [LightGBM] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_LightGBM_fold2.pkl
+2025-12-13 18:31:21 | INFO | train_base_models | [Loan_Terms] [LightGBM] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_LightGBM_fold3.pkl
+2025-12-13 18:31:22 | INFO | train_base_models | [Loan_Terms] [LightGBM] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_LightGBM_fold4.pkl
+2025-12-13 18:31:23 | INFO | train_base_models | [Loan_Terms] [LightGBM] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Loan_Terms_LightGBM_fold5.pkl
+2025-12-13 18:31:23 | INFO | train_base_models | [Loan_Terms] [LightGBM] FINAL OOF AUC = 0.7030
+2025-12-13 18:31:23 | INFO | train_base_models | 
+==================== Group: Credit_Profile ====================
+2025-12-13 18:31:23 | INFO | train_base_models | [Credit_Profile] X shape: (180488, 14), y shape: (180488,)
+2025-12-13 18:31:23 | INFO | train_base_models | [Credit_Profile] ▶ Training model: XGBoost
+2025-12-13 18:31:23 | INFO | train_base_models | [Credit_Profile] [XGBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_XGBoost_fold1.pkl
+2025-12-13 18:31:23 | INFO | train_base_models | [Credit_Profile] [XGBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_XGBoost_fold2.pkl
+2025-12-13 18:31:24 | INFO | train_base_models | [Credit_Profile] [XGBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_XGBoost_fold3.pkl
+2025-12-13 18:31:24 | INFO | train_base_models | [Credit_Profile] [XGBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_XGBoost_fold4.pkl
+2025-12-13 18:31:24 | INFO | train_base_models | [Credit_Profile] [XGBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_XGBoost_fold5.pkl
+2025-12-13 18:31:24 | INFO | train_base_models | [Credit_Profile] [XGBoost] FINAL OOF AUC = 0.6302
+2025-12-13 18:31:24 | INFO | train_base_models | [Credit_Profile] ▶ Training model: GBDT
+2025-12-13 18:31:36 | INFO | train_base_models | [Credit_Profile] [GBDT] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_GBDT_fold1.pkl
+2025-12-13 18:31:48 | INFO | train_base_models | [Credit_Profile] [GBDT] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_GBDT_fold2.pkl
+2025-12-13 18:31:59 | INFO | train_base_models | [Credit_Profile] [GBDT] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_GBDT_fold3.pkl
+2025-12-13 18:32:12 | INFO | train_base_models | [Credit_Profile] [GBDT] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_GBDT_fold4.pkl
+2025-12-13 18:32:24 | INFO | train_base_models | [Credit_Profile] [GBDT] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_GBDT_fold5.pkl
+2025-12-13 18:32:24 | INFO | train_base_models | [Credit_Profile] [GBDT] FINAL OOF AUC = 0.6294
+2025-12-13 18:32:24 | INFO | train_base_models | [Credit_Profile] ▶ Training model: AdaBoost
+2025-12-13 18:32:30 | INFO | train_base_models | [Credit_Profile] [AdaBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_AdaBoost_fold1.pkl
+2025-12-13 18:32:36 | INFO | train_base_models | [Credit_Profile] [AdaBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_AdaBoost_fold2.pkl
+2025-12-13 18:32:42 | INFO | train_base_models | [Credit_Profile] [AdaBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_AdaBoost_fold3.pkl
+2025-12-13 18:32:48 | INFO | train_base_models | [Credit_Profile] [AdaBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_AdaBoost_fold4.pkl
+2025-12-13 18:32:54 | INFO | train_base_models | [Credit_Profile] [AdaBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_AdaBoost_fold5.pkl
+2025-12-13 18:32:55 | INFO | train_base_models | [Credit_Profile] [AdaBoost] FINAL OOF AUC = 0.6083
+2025-12-13 18:32:55 | INFO | train_base_models | [Credit_Profile] ▶ Training model: RandomForest
+2025-12-13 18:32:56 | INFO | train_base_models | [Credit_Profile] [RandomForest] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_RandomForest_fold1.pkl
+2025-12-13 18:32:57 | INFO | train_base_models | [Credit_Profile] [RandomForest] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_RandomForest_fold2.pkl
+2025-12-13 18:32:59 | INFO | train_base_models | [Credit_Profile] [RandomForest] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_RandomForest_fold3.pkl
+2025-12-13 18:33:00 | INFO | train_base_models | [Credit_Profile] [RandomForest] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_RandomForest_fold4.pkl
+2025-12-13 18:33:02 | INFO | train_base_models | [Credit_Profile] [RandomForest] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_RandomForest_fold5.pkl
+2025-12-13 18:33:02 | INFO | train_base_models | [Credit_Profile] [RandomForest] FINAL OOF AUC = 0.6272
+2025-12-13 18:33:02 | INFO | train_base_models | [Credit_Profile] ▶ Training model: LightGBM
+2025-12-13 18:33:03 | INFO | train_base_models | [Credit_Profile] [LightGBM] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_LightGBM_fold1.pkl
+2025-12-13 18:33:03 | INFO | train_base_models | [Credit_Profile] [LightGBM] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_LightGBM_fold2.pkl
+2025-12-13 18:33:04 | INFO | train_base_models | [Credit_Profile] [LightGBM] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_LightGBM_fold3.pkl
+2025-12-13 18:33:05 | INFO | train_base_models | [Credit_Profile] [LightGBM] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_LightGBM_fold4.pkl
+2025-12-13 18:33:06 | INFO | train_base_models | [Credit_Profile] [LightGBM] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Credit_Profile_LightGBM_fold5.pkl
+2025-12-13 18:33:06 | INFO | train_base_models | [Credit_Profile] [LightGBM] FINAL OOF AUC = 0.6292
+2025-12-13 18:33:06 | INFO | train_base_models | 
+==================== Group: Utilization_and_Activity ====================
+2025-12-13 18:33:06 | INFO | train_base_models | [Utilization_and_Activity] X shape: (180488, 29), y shape: (180488,)
+2025-12-13 18:33:06 | INFO | train_base_models | [Utilization_and_Activity] ▶ Training model: XGBoost
+2025-12-13 18:33:07 | INFO | train_base_models | [Utilization_and_Activity] [XGBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_XGBoost_fold1.pkl
+2025-12-13 18:33:07 | INFO | train_base_models | [Utilization_and_Activity] [XGBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_XGBoost_fold2.pkl
+2025-12-13 18:33:08 | INFO | train_base_models | [Utilization_and_Activity] [XGBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_XGBoost_fold3.pkl
+2025-12-13 18:33:08 | INFO | train_base_models | [Utilization_and_Activity] [XGBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_XGBoost_fold4.pkl
+2025-12-13 18:33:08 | INFO | train_base_models | [Utilization_and_Activity] [XGBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_XGBoost_fold5.pkl
+2025-12-13 18:33:09 | INFO | train_base_models | [Utilization_and_Activity] [XGBoost] FINAL OOF AUC = 0.6532
+2025-12-13 18:33:09 | INFO | train_base_models | [Utilization_and_Activity] ▶ Training model: GBDT
+2025-12-13 18:34:21 | INFO | train_base_models | [Utilization_and_Activity] [GBDT] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_GBDT_fold1.pkl
+2025-12-13 18:35:34 | INFO | train_base_models | [Utilization_and_Activity] [GBDT] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_GBDT_fold2.pkl
+2025-12-13 18:36:47 | INFO | train_base_models | [Utilization_and_Activity] [GBDT] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_GBDT_fold3.pkl
+2025-12-13 18:37:59 | INFO | train_base_models | [Utilization_and_Activity] [GBDT] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_GBDT_fold4.pkl
+2025-12-13 18:39:13 | INFO | train_base_models | [Utilization_and_Activity] [GBDT] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_GBDT_fold5.pkl
+2025-12-13 18:39:13 | INFO | train_base_models | [Utilization_and_Activity] [GBDT] FINAL OOF AUC = 0.6509
+2025-12-13 18:39:13 | INFO | train_base_models | [Utilization_and_Activity] ▶ Training model: AdaBoost
+2025-12-13 18:39:46 | INFO | train_base_models | [Utilization_and_Activity] [AdaBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_AdaBoost_fold1.pkl
+2025-12-13 18:40:19 | INFO | train_base_models | [Utilization_and_Activity] [AdaBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_AdaBoost_fold2.pkl
+2025-12-13 18:40:52 | INFO | train_base_models | [Utilization_and_Activity] [AdaBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_AdaBoost_fold3.pkl
+2025-12-13 18:41:25 | INFO | train_base_models | [Utilization_and_Activity] [AdaBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_AdaBoost_fold4.pkl
+2025-12-13 18:41:58 | INFO | train_base_models | [Utilization_and_Activity] [AdaBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_AdaBoost_fold5.pkl
+2025-12-13 18:41:58 | INFO | train_base_models | [Utilization_and_Activity] [AdaBoost] FINAL OOF AUC = 0.6302
+2025-12-13 18:41:58 | INFO | train_base_models | [Utilization_and_Activity] ▶ Training model: RandomForest
+2025-12-13 18:42:06 | INFO | train_base_models | [Utilization_and_Activity] [RandomForest] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_RandomForest_fold1.pkl
+2025-12-13 18:42:13 | INFO | train_base_models | [Utilization_and_Activity] [RandomForest] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_RandomForest_fold2.pkl
+2025-12-13 18:42:21 | INFO | train_base_models | [Utilization_and_Activity] [RandomForest] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_RandomForest_fold3.pkl
+2025-12-13 18:42:28 | INFO | train_base_models | [Utilization_and_Activity] [RandomForest] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_RandomForest_fold4.pkl
+2025-12-13 18:42:36 | INFO | train_base_models | [Utilization_and_Activity] [RandomForest] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_RandomForest_fold5.pkl
+2025-12-13 18:42:36 | INFO | train_base_models | [Utilization_and_Activity] [RandomForest] FINAL OOF AUC = 0.6472
+2025-12-13 18:42:36 | INFO | train_base_models | [Utilization_and_Activity] ▶ Training model: LightGBM
+2025-12-13 18:42:37 | INFO | train_base_models | [Utilization_and_Activity] [LightGBM] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_LightGBM_fold1.pkl
+2025-12-13 18:42:38 | INFO | train_base_models | [Utilization_and_Activity] [LightGBM] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_LightGBM_fold2.pkl
+2025-12-13 18:42:39 | INFO | train_base_models | [Utilization_and_Activity] [LightGBM] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_LightGBM_fold3.pkl
+2025-12-13 18:42:40 | INFO | train_base_models | [Utilization_and_Activity] [LightGBM] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_LightGBM_fold4.pkl
+2025-12-13 18:42:40 | INFO | train_base_models | [Utilization_and_Activity] [LightGBM] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Utilization_and_Activity_LightGBM_fold5.pkl
+2025-12-13 18:42:41 | INFO | train_base_models | [Utilization_and_Activity] [LightGBM] FINAL OOF AUC = 0.6533
+2025-12-13 18:42:41 | INFO | train_base_models | 
+==================== Group: Categorical_Flags ====================
+2025-12-13 18:42:41 | INFO | train_base_models | [Categorical_Flags] X shape: (180488, 51), y shape: (180488,)
+2025-12-13 18:42:41 | INFO | train_base_models | [Categorical_Flags] ▶ Training model: XGBoost
+2025-12-13 18:42:41 | INFO | train_base_models | [Categorical_Flags] [XGBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_XGBoost_fold1.pkl
+2025-12-13 18:42:42 | INFO | train_base_models | [Categorical_Flags] [XGBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_XGBoost_fold2.pkl
+2025-12-13 18:42:42 | INFO | train_base_models | [Categorical_Flags] [XGBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_XGBoost_fold3.pkl
+2025-12-13 18:42:43 | INFO | train_base_models | [Categorical_Flags] [XGBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_XGBoost_fold4.pkl
+2025-12-13 18:42:43 | INFO | train_base_models | [Categorical_Flags] [XGBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_XGBoost_fold5.pkl
+2025-12-13 18:42:43 | INFO | train_base_models | [Categorical_Flags] [XGBoost] FINAL OOF AUC = 0.7256
+2025-12-13 18:42:43 | INFO | train_base_models | [Categorical_Flags] ▶ Training model: GBDT
+2025-12-13 18:42:54 | INFO | train_base_models | [Categorical_Flags] [GBDT] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_GBDT_fold1.pkl
+2025-12-13 18:43:06 | INFO | train_base_models | [Categorical_Flags] [GBDT] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_GBDT_fold2.pkl
+2025-12-13 18:43:17 | INFO | train_base_models | [Categorical_Flags] [GBDT] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_GBDT_fold3.pkl
+2025-12-13 18:43:29 | INFO | train_base_models | [Categorical_Flags] [GBDT] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_GBDT_fold4.pkl
+2025-12-13 18:43:40 | INFO | train_base_models | [Categorical_Flags] [GBDT] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_GBDT_fold5.pkl
+2025-12-13 18:43:40 | INFO | train_base_models | [Categorical_Flags] [GBDT] FINAL OOF AUC = 0.7254
+2025-12-13 18:43:40 | INFO | train_base_models | [Categorical_Flags] ▶ Training model: AdaBoost
+2025-12-13 18:43:47 | INFO | train_base_models | [Categorical_Flags] [AdaBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_AdaBoost_fold1.pkl
+2025-12-13 18:43:53 | INFO | train_base_models | [Categorical_Flags] [AdaBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_AdaBoost_fold2.pkl
+2025-12-13 18:44:00 | INFO | train_base_models | [Categorical_Flags] [AdaBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_AdaBoost_fold3.pkl
+2025-12-13 18:44:07 | INFO | train_base_models | [Categorical_Flags] [AdaBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_AdaBoost_fold4.pkl
+2025-12-13 18:44:13 | INFO | train_base_models | [Categorical_Flags] [AdaBoost] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_AdaBoost_fold5.pkl
+2025-12-13 18:44:14 | INFO | train_base_models | [Categorical_Flags] [AdaBoost] FINAL OOF AUC = 0.6780
+2025-12-13 18:44:14 | INFO | train_base_models | [Categorical_Flags] ▶ Training model: RandomForest
+2025-12-13 18:44:16 | INFO | train_base_models | [Categorical_Flags] [RandomForest] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_RandomForest_fold1.pkl
+2025-12-13 18:44:18 | INFO | train_base_models | [Categorical_Flags] [RandomForest] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_RandomForest_fold2.pkl
+2025-12-13 18:44:20 | INFO | train_base_models | [Categorical_Flags] [RandomForest] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_RandomForest_fold3.pkl
+2025-12-13 18:44:22 | INFO | train_base_models | [Categorical_Flags] [RandomForest] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_RandomForest_fold4.pkl
+2025-12-13 18:44:24 | INFO | train_base_models | [Categorical_Flags] [RandomForest] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_RandomForest_fold5.pkl
+2025-12-13 18:44:24 | INFO | train_base_models | [Categorical_Flags] [RandomForest] FINAL OOF AUC = 0.7239
+2025-12-13 18:44:24 | INFO | train_base_models | [Categorical_Flags] ▶ Training model: LightGBM
+2025-12-13 18:44:25 | INFO | train_base_models | [Categorical_Flags] [LightGBM] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_LightGBM_fold1.pkl
+2025-12-13 18:44:26 | INFO | train_base_models | [Categorical_Flags] [LightGBM] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_LightGBM_fold2.pkl
+2025-12-13 18:44:27 | INFO | train_base_models | [Categorical_Flags] [LightGBM] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_LightGBM_fold3.pkl
+2025-12-13 18:44:27 | INFO | train_base_models | [Categorical_Flags] [LightGBM] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_LightGBM_fold4.pkl
+2025-12-13 18:44:28 | INFO | train_base_models | [Categorical_Flags] [LightGBM] Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/Categorical_Flags_LightGBM_fold5.pkl
+2025-12-13 18:44:28 | INFO | train_base_models | [Categorical_Flags] [LightGBM] FINAL OOF AUC = 0.7251
+2025-12-13 18:44:30 | INFO | train_base_models | Saved OOF predictions to /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/oof/oof_predictions_all_models.csv
+2025-12-13 18:44:30 | INFO | train_base_models | [Loan_Terms] Top-3 models: [('LightGBM', np.float64(0.7030469965676726)), ('XGBoost', np.float64(0.7005808176164438)), ('GBDT', np.float64(0.6967468037780831))]
+2025-12-13 18:44:30 | INFO | train_base_models | [Credit_Profile] Top-3 models: [('XGBoost', np.float64(0.6302144291129894)), ('GBDT', np.float64(0.6293836648968381)), ('LightGBM', np.float64(0.629246424855672))]
+2025-12-13 18:44:30 | INFO | train_base_models | [Utilization_and_Activity] Top-3 models: [('LightGBM', np.float64(0.6533225796613814)), ('XGBoost', np.float64(0.6531859191977593)), ('GBDT', np.float64(0.650920980087608))]
+2025-12-13 18:44:30 | INFO | train_base_models | [Categorical_Flags] Top-3 models: [('XGBoost', np.float64(0.7256243830843225)), ('GBDT', np.float64(0.725375723154092)), ('LightGBM', np.float64(0.7250966753483901))]
+2025-12-13 18:44:30 | INFO | train_base_models | Saved top_models dict to /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/oof/top_models_per_group.pkl
+2025-12-13 18:44:32 | INFO | train_base_models | Saved meta_train (top models) to /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/oof/meta_train_top_models.csv, shape=(180488, 13)
+2025-12-13 18:44:32 | INFO | train_base_models | ✅ Base model training completed successfully.

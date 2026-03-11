@@ -1,0 +1,18 @@
+2025-12-13 18:18:53 | INFO | preprocessing | 🚀 Starting preprocessing for LendingClub
+2025-12-13 18:18:54 | INFO | preprocessing | Loaded raw data: (225611, 151)
+2025-12-13 18:18:54 | INFO | preprocessing | Feature matrix shape before split: (225611, 148)
+2025-12-13 18:18:55 | INFO | preprocessing | Train shape: (180488, 148), Test shape: (45123, 148)
+2025-12-13 18:18:55 | INFO | preprocessing | Dropping columns > 90%% NaN (train-based): 39
+2025-12-13 18:18:55 | INFO | preprocessing | Examples: ['member_id', 'desc', 'next_pymnt_d', 'annual_inc_joint', 'dti_joint', 'verification_status_joint', 'revol_bal_joint', 'sec_app_fico_range_low', 'sec_app_fico_range_high', 'sec_app_earliest_cr_line']
+2025-12-13 18:18:55 | INFO | preprocessing | Dropping low-coverage categorical cols: 9
+2025-12-13 18:18:55 | INFO | preprocessing | Examples: ['sub_grade', 'emp_length', 'issue_d', 'url', 'zip_code', 'addr_state', 'earliest_cr_line', 'last_pymnt_d', 'last_credit_pull_d']
+2025-12-13 18:18:55 | INFO | preprocessing | One-hot encoding 12 columns
+2025-12-13 18:18:56 | INFO | preprocessing | Processed train shape: (180488, 142), processed test shape: (45123, 142)
+2025-12-13 18:19:06 | INFO | preprocessing | Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/processed_train.csv
+2025-12-13 18:19:06 | INFO | preprocessing | Saved /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/processed_test.csv
+2025-12-13 18:19:06 | INFO | preprocessing | Creating per-group train/test CSVs
+2025-12-13 18:19:07 | INFO | preprocessing | [Loan_Terms] train: (180488, 10), test: (45123, 10) → saved to /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/group_datasets/Loan_Terms_train.csv, /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/group_datasets/Loan_Terms_test.csv
+2025-12-13 18:19:08 | INFO | preprocessing | [Credit_Profile] train: (180488, 16), test: (45123, 16) → saved to /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/group_datasets/Credit_Profile_train.csv, /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/group_datasets/Credit_Profile_test.csv
+2025-12-13 18:19:12 | INFO | preprocessing | [Utilization_and_Activity] train: (180488, 31), test: (45123, 31) → saved to /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/group_datasets/Utilization_and_Activity_train.csv, /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/group_datasets/Utilization_and_Activity_test.csv
+2025-12-13 18:19:13 | INFO | preprocessing | [Categorical_Flags] train: (180488, 53), test: (45123, 53) → saved to /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/group_datasets/Categorical_Flags_train.csv, /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/group_datasets/Categorical_Flags_test.csv
+2025-12-13 18:19:13 | INFO | preprocessing | ✅ Preprocessing completed successfully.

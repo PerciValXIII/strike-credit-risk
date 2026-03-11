@@ -1,0 +1,5 @@
+2025-12-13 18:48:06 | INFO | stack_meta_model | 🚀 Starting meta-model training
+2025-12-13 18:48:06 | INFO | stack_meta_model | Meta-train shape: (180488, 12)
+2025-12-13 18:50:16 | INFO | stack_meta_model | Meta-model CV AUC: mean=0.7490, std=0.0030
+2025-12-13 18:50:53 | INFO | stack_meta_model | Meta-model train AUC on OOF stack: 0.7492
+2025-12-13 18:50:53 | INFO | stack_meta_model | ✅ Saved meta-model to /Users/percival/Projects/strike-credit-risk/src/exp2_lendingclub/model_training/models/stacking_meta_model.pkl
